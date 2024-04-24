@@ -1,0 +1,31 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "send1&Sequence_33",
+        "send&Sequence_33",
+        "pass&Sequence_30",
+        "res&Sequence_30",
+        "morn&Sequence_30",
+        "ExtractDataTable&Sequence_29",
+        "loca&Sequence_4",
+        "dat&Sequence_4",
+        "d&Sequence_4",
+        "dt&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}

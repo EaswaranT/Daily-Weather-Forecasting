@@ -1,0 +1,409 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,3135.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail.IMAP.Activities</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="813.6,3070.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt" />
+      <Variable x:TypeArguments="x:String" Name="d" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dat" />
+      <Variable x:TypeArguments="x:String" Default="Chennai" Name="loca" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="751.2,2958.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://weather.com/en-IN/">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="717.6,2832.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="655.2,24.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="655.2,24.8" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A '" sap:VirtualizedContainerService.HintSize="655.2,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="73afa8d8-56a3-47bc-a9a8-4197268b91ce" InformativeScreenshot="085792c053c8b1ceab5a18c4adf461ab" Selector="&lt;webctrl aaname='Hourly' tag='A' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="655.2,24.8" sap2010:WorkflowViewState.IdRef="Delay_5" />
+            <Assign sap:VirtualizedContainerService.HintSize="655.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[loca]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">chennai</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="655.2,24.8" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  LocationSearch_i...'" sap:VirtualizedContainerService.HintSize="655.2,156" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[loca]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5bafadf6-01b9-4d39-82d1-cc0433a8bfc0" InformativeScreenshot="e643c8e908fd2497ba82eced1ff15fee" Selector="&lt;webctrl id='LocationSearch_input' tag='INPUT' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="655.2,24.8" sap2010:WorkflowViewState.IdRef="Delay_3" />
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON '" sap:VirtualizedContainerService.HintSize="655.2,107.2" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="728fda83-12e5-4d00-a810-68b4afdf0ee5" InformativeScreenshot="6bf9397dc829e6450caa4254d2ee0d3f" Selector="&lt;webctrl tag='BUTTON' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="655.2,24.8" sap2010:WorkflowViewState.IdRef="Delay_4" />
+            <Sequence DisplayName="Recording Sequence" sap:VirtualizedContainerService.HintSize="655.2,1720" sap2010:WorkflowViewState.IdRef="Sequence_29">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'HourlyWea Page'" sap:VirtualizedContainerService.HintSize="592.8,1608" sap2010:WorkflowViewState.IdRef="BrowserScope_7" InformativeScreenshot="ae8e676d674c7c34d7ab0f66c7fe056c" Selector="&lt;html app='chrome.exe' title='Hourly Weather Forecast for *- The Weather Channel | Weather.com' /&gt;">
+                <ui:BrowserScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="559.2,1460.8" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="morn" />
+                        <Variable x:TypeArguments="x:String" Name="res" />
+                        <Variable x:TypeArguments="x:String" Name="pass" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'DIV'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='details' /&gt;&lt;webctrl tag='summary' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Time' attr='fulltext'&gt;&lt;webctrl tag='details' /&gt;&lt;webctrl tag='summary' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Temperature' attr='fulltext'&gt;&lt;webctrl tag='details' /&gt;&lt;webctrl tag='summary' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Condition' attr='fulltext'&gt;&lt;webctrl tag='details' /&gt;&lt;webctrl tag='summary' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='rain percent' attr='fulltext'&gt;&lt;webctrl tag='details' /&gt;&lt;webctrl tag='summary' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;/column&gt;&lt;column exact='1' name='wind speed' attr='fulltext'&gt;&lt;webctrl tag='details' /&gt;&lt;webctrl tag='summary' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="496.8,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_7" MaxNumberOfResults="24" SimulateClick="True">
+                        <ui:ExtractData.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e13a1892-a91b-4609-b9c2-fcd775b371fa" InformativeScreenshot="01334e3355754b1ae633a43096206b29" Selector="&lt;webctrl class='HourlyForecast--DisclosureList--MQWP6' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:ExtractData.Target>
+                      </ui:ExtractData>
+                      <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="496.8,116" sap2010:WorkflowViewState.IdRef="WriteRange_7" SheetName="sheet1" StartingCell="A1" WorkbookPath="weather.xlsx" />
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A '" sap:VirtualizedContainerService.HintSize="496.8,107.2" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="458b00d6-15a4-4952-836e-18291cf6717e" InformativeScreenshot="8e79a825215602273d22456780684a6a" Selector="&lt;webctrl aaname='Today' tag='A' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'DIV'" sap:VirtualizedContainerService.HintSize="496.8,107.2" sap2010:WorkflowViewState.IdRef="GetValue_2">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b961895f-7839-478c-9922-eb38a717ebf1" InformativeScreenshot="996394f676c1b7f7d31eebd4c0a4a627" Selector="&lt;webctrl class='CurrentConditions--phraseValue--mZC_p' tag='DIV' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
+                          <OutArgument x:TypeArguments="x:String">[res]</OutArgument>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
+                      <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="496.8,24.8" sap2010:WorkflowViewState.IdRef="GetPassword_4" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/38Lb6Wglke/UyOYagzA0QAAAAACAAAAAAAQZgAAAAEAACAAAACU1+dM4MAMySZdvOTWm9ppLkRwnr+7DsGzj4CVRNVkOAAAAAAOgAAAAAIAACAAAACBafIBJVX02R7zGRk3MS6pP0uAevgk+yyRZJ8DJlxCfRAAAAAoXzirhecU/836xPfp7n9WQAAAAIfjdeO7S0UMOilyZXyO2e9bC5Rcgpgld+TyjrY1xy7iABvtNlW+do9lJCvnaipoomx16Mmx8+/M+zDGd/a8FHE=" Result="[pass]" />
+                      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[res]" sap:VirtualizedContainerService.HintSize="496.8,565.6" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                        <Sequence x:Key="Sunny" sap:VirtualizedContainerService.HintSize="449.6,258.4" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Today's weather report of &quot;+loca+vbCr+&quot;It is going to be a &quot;+vbCr+ res +&quot; day&quot; +vbCr +&quot;Sunny weather brings a cheerful ambiance with clear skies and abundant sunlight, creating an ideal atmosphere for outdoor activities and uplifting moods &quot;+vbcr+ &quot; The hourly weather report for the day is attached below&quot; +vbCr + &quot; Have a Nice and safe day&quot;+vbCr+&quot;Thank you&quot;]" Email="210701058@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="387.2,146.4" sap2010:WorkflowViewState.IdRef="SendMail_4" IgnoreCRL="False" IsBodyHtml="True" Password="[pass]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="weather report" To="210701058@rajalakshmi.edu.in">
+                            <ui:SendMail.Files>
+                              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                                <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\weather.xlsx</InArgument>
+                                <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\sunny.jpg</InArgument>
+                              </scg:List>
+                            </ui:SendMail.Files>
+                          </ui:SendMail>
+                        </Sequence>
+                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" x:Key="Haze" Body="[&quot;Today's weather report of &quot;+loca+vbCr+&quot;It is going to be a &quot;+ res +&quot; day&quot;+vbCr+&quot;Haze weather envelops the landscape in a subtle veil, reducing visibility and casting a dreamlike ambiance with muted sunlight.Reduced visibility due to suspended particles in the air&quot;+vbcr+&quot;The hourly weather report for the day is attached below&quot;+vbCr + &quot; Have a Nice and safe day&quot;+vbCr+&quot;Thank you&quot;]" Email="210701058@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_5" IgnoreCRL="False" IsBodyHtml="False" Password="[pass]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="weather report" To="210701058@rajalakshmi.edu.in">
+                          <ui:SendMail.Files>
+                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\weather.xlsx</InArgument>
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\haze.png</InArgument>
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\haze2.png</InArgument>
+                              <InArgument x:TypeArguments="x:String" />
+                            </scg:List>
+                          </ui:SendMail.Files>
+                        </ui:SendMail>
+                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" x:Key="Partly Cloudy" Body="[&quot;Today's weather report of &quot;+loca+vbCr+&quot;It is going to be a &quot;+ res +&quot;day&quot;+vbCr+&quot;Partly cloudy weather offers a delightful blend of sunshine and scattered clouds, creating a picturesque sky with intermittent sunbeams and comfortable temperatures.A mix of clouds and sunshine, where the sky is not completely covered.&quot;+vbcr+&quot;On a partly cloudy day, where the sky alternates between sunshine and clouds, it's recommended to dress in versatile layers. &quot;+vbCr+&quot;The hourly weather report for the day is attached below&quot;+vbCr + &quot; Have a Nice and safe day&quot;+vbCr+&quot;Thank you&quot;]" Email="210701058@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_6" IgnoreCRL="False" IsBodyHtml="False" Password="[pass]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="weather report" To="210701058@rajalakshmi.edu.in">
+                          <ui:SendMail.Files>
+                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\weather.xlsx</InArgument>
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\partly cloudy.jpg</InArgument>
+                            </scg:List>
+                          </ui:SendMail.Files>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:SendMail>
+                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" x:Key="Mostly Cloudy" Body="[&quot;Today's weather report of &quot;+loca+vbCr+&quot;It is going to be a &quot;+ res +&quot;day&quot;+vbCr+&quot; Mostly cloudy weather paints the sky with a gentle diffusion of clouds, filtering sunlight and providing a cool, diffused atmosphere with a chance of occasional sunshine.Overcast skies with a significant amount of cloud cover.&quot;+vbcr+&quot;On a mostly cloudy day, it's a good idea to dress in layers to accommodate potential changes in temperature. Wear a light jacket or sweater that you can easily take off if it gets warmer when the clouds break.&quot;+vbCr+&quot;The hourly weather report for the day is attached below&quot;+vbCr + &quot; Have a Nice and safe day&quot;+vbCr+&quot;Thank you&quot;]" Email="210701058@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_7" IgnoreCRL="False" IsBodyHtml="False" Password="[pass]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="weather report" To="210701058@rajalakshmi.edu.in">
+                          <ui:SendMail.Files>
+                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\weather.xlsx</InArgument>
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\mostly cloudy.jpeg</InArgument>
+                            </scg:List>
+                          </ui:SendMail.Files>
+                        </ui:SendMail>
+                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" x:Key="Smoke" Body="[&quot;Today's weather report of &quot;+loca+vbCr+&quot;It is going to be a &quot;+res +&quot;day&quot;+vbCr+&quot;Smoke weather veils the environment in a hazy, smoky atmosphere, reducing visibility and often signaling the presence of wildfires or other sources of significant air pollution. Reduced visibility due to suspended particles in the air, &quot;+vbcr+&quot;On a smoky day, it's important to prioritize your health and safety. Wear clothing that provides coverage to minimize exposure to airborne particles. Choose long sleeves, pants, and a hat to protect your skin. &quot;+vbCr+&quot;The hourly weather report for the day is attached below&quot;+vbCr + &quot; Have a Nice and safe day&quot;+vbCr+&quot;Thank you&quot;]" Email="210701058@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_8" IgnoreCRL="False" IsBodyHtml="False" Password="[pass]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="weather report" To="210701058@rajalakshmi.edu.in">
+                          <ui:SendMail.Files>
+                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\weather.xlsx</InArgument>
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\smoke.jpg</InArgument>
+                            </scg:List>
+                          </ui:SendMail.Files>
+                        </ui:SendMail>
+                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" x:Key="Thunderstorm" Body="[&quot;Today's weather report of &quot;+loca+vbCr+&quot;It is going to be a &quot;+res +&quot;day&quot;+vbCr+&quot; Thunderstorm weather unleashes nature's drama with booming thunder, electrifying lightning, and torrential rain, creating a powerful spectacle that commands both awe and caution. Storms characterized by thunder, lightning, heavy rain, and sometimes hail.&quot;+vbcr+&quot;The hourly weather report for the day is attached below&quot;+vbCr + &quot; Have a Nice and safe day&quot;+vbCr+&quot;Thank you&quot;]" Email="210701058@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_9" IgnoreCRL="False" IsBodyHtml="False" Password="[pass]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="weather report" To="210701058@rajalakshmi.edu.in">
+                          <ui:SendMail.Files>
+                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\weather.xlsx</InArgument>
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\thunderstorm.png</InArgument>
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\thunderstorm2.png</InArgument>
+                            </scg:List>
+                          </ui:SendMail.Files>
+                        </ui:SendMail>
+                        <Sequence x:Key="Fog" sap:VirtualizedContainerService.HintSize="449.6,258.4" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="send" />
+                            <Variable x:TypeArguments="x:String" Name="send1" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Today's weather report of &quot;+loca+vbCr+&quot;It is going to be a &quot;+res +&quot;day&quot;+vbcr+&quot;Fog weather blankets the surroundings in a mystical embrace, obscuring visibility with its ethereal veil and infusing an air of tranquility and mystery into the landscape. Dense fog reducing visibility near the ground.&quot;+vbcr+&quot;On a foggy day, it's best to wear clothing that provides warmth and visibility. Choose a jacket or coat for warmth, and consider clothing in bright or light colors to enhance visibility in reduced light conditions. &quot;+vbCr+&quot;The hourly weather report for the day is attached below&quot;+vbCr + &quot; Have a Nice and safe day&quot;+vbCr+&quot;Thank you&quot;]" Email="210701058@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="387.2,146.4" sap2010:WorkflowViewState.IdRef="SendMail_10" IgnoreCRL="False" IsBodyHtml="False" Password="[pass]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="weather report" To="210701058@rajalakshmi.edu.in">
+                            <ui:SendMail.Files>
+                              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                                <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\weather.xlsx</InArgument>
+                                <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\fog.png</InArgument>
+                              </scg:List>
+                            </ui:SendMail.Files>
+                          </ui:SendMail>
+                        </Sequence>
+                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" x:Key="Showers in the Vicinity" Body="[&quot;Today's weather report of &quot;+loca+vbCr+&quot;It is going to be a &quot;+res +vbcr+&quot;Rainfall occurring nearby or in the surrounding area. It suggests that rain is not directly overhead but is happening close by.&quot;+vbcr+&quot;The hourly weather report for the day is attached below&quot;+vbCr + &quot; Have a Nice and safe day&quot;+vbCr+&quot;Thank you&quot;]" Email="210701058@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_11" IgnoreCRL="False" IsBodyHtml="False" Password="[pass]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="weather report" To="210701058@rajalakshmi.edu.in">
+                          <ui:SendMail.Files>
+                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\weather.xlsx</InArgument>
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\shower.jpg</InArgument>
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\thunderstorm2.png</InArgument>
+                            </scg:List>
+                          </ui:SendMail.Files>
+                        </ui:SendMail>
+                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" x:Key="mist" Body="[&quot;Today's weather report of &quot;+loca+vbCr+&quot;It is going to be &quot;+res +vbcr+&quot;When there's mist, the sky looks hazy, and the sun's light is soft, making everything seem calm and a bit mysterious.&quot;+vbcr+&quot;Consider wearing a waterproof jacket or coat, along with layers to stay warm. Opt for water-resistant footwear and carry an umbrella for added protection. Dressing in darker colors may also help conceal any potential water spots or dampness.&quot;+vbCr+&quot;The hourly weather report for the day is attached below&quot;+vbCr + &quot; Have a Nice and safe day&quot;+vbCr+&quot;Thank you&quot;]" Email="210701058@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_12" IgnoreCRL="False" IsBodyHtml="False" Password="[pass]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="weather report" To="210701058@rajalakshmi.edu.in">
+                          <ui:SendMail.Files>
+                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\weather.xlsx</InArgument>
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\mist.jpg</InArgument>
+                            </scg:List>
+                          </ui:SendMail.Files>
+                        </ui:SendMail>
+                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" x:Key="Rain Shower" Body="[&quot;Today's weather report of &quot;+loca+vbCr+&quot;It is going to be &quot;+res +vbcr+&quot;A rain shower is a short burst of light rain, typically lasting for a brief period. It's a brief and gentle episode of rainfall.&quot;+vbcr+&quot;consider wearing a waterproof jacket or coat, along with water-resistant footwear. Don't forget an umbrella for added protection against the rain.&quot;+vbCr+&quot;The hourly weather report for the day is attached below&quot;+vbCr + &quot; Have a Nice and safe day&quot;+vbCr+&quot;Thank you&quot;]" Email="210701058@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_13" IgnoreCRL="False" IsBodyHtml="False" Password="[pass]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="weather report" To="210701058@rajalakshmi.edu.in">
+                          <ui:SendMail.Files>
+                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\weather.xlsx</InArgument>
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\rainshower.png</InArgument>
+                              <InArgument x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\thunderstorm2.png</InArgument>
+                            </scg:List>
+                          </ui:SendMail.Files>
+                        </ui:SendMail>
+                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" x:Key="Cloudy" Body="[&quot;Today's weather report of &quot;+loca+vbCr+&quot;It is going to be &quot;+res +vbcr+&quot;Cloudy weather means the sky is covered with clouds, making it look gray or overcast. During such days, the sun may be hidden behind the clouds, and there's a chance of rain or drizzle.&quot;+vbCr+&quot;Choose a cozy sweater, a light jacket, or a long-sleeved shirt paired with comfortable pants or jeans. Don't forget to bring an umbrella in case of rain.&quot;+vbCr+&quot;The hourly weather report For the day Is attached below&quot;+vbCr + &quot; Have a Nice And safe day&quot;+vbCr+&quot;Thank you&quot;]" Email="210701058@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_14" IgnoreCRL="False" IsBodyHtml="False" Password="[pass]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="weather report" To="210701058@rajalakshmi.edu.in">
+                          <ui:SendMail.Files>
+                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\weather.xlsx</Literal>
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String">C:\Users\T.Easwaran\Documents\UiPath\project\cloudy.png</Literal>
+                              </InArgument>
+                            </scg:List>
+                          </ui:SendMail.Files>
+                        </ui:SendMail>
+                      </Switch>
+                      <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="496.8,80.8" sap2010:WorkflowViewState.IdRef="DeleteFileX_3" Path="weather.xlsx" />
+                    </Sequence>
+                  </ActivityAction>
+                </ui:BrowserScope.Body>
+              </ui:BrowserScope>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>
